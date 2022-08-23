@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #edf6f9;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+
+  h1 {
+    color: rgb(244, 18, 18);
+    font-size: 7rem;
+    margin: 0;
+    margin-bottom: 20px;
+
+    &.plus {
+      color: #2a9d8f;
+    }
+    &.minus {
+      color: #e63946;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #ef0f07;
+  }
+
+  button {
+    background: transparent;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.05s ease-in-out;
+
+    &.minus {
+      background-color: #d9e92a;
+      color: #fff;
+      box-shadow: 0 4px 0 darken(#e63946, 10%);
+      border: 1px solid darken(#d9e92a, 15%);
+    }
+
+    &.plus {
+      background-color: #1428bd;
+      color: #fff;
+      box-shadow: 0 4px 0 darken(#2a9d8f, 10%);
+      border: 1px solid darken(#1428bd, 15%);
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+  }
+}
