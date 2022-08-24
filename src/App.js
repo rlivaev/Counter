@@ -20,6 +20,7 @@ function App() {
         <h1>{count}</h1>
         <button onClick={countMinus} className="minus">- Минус</button>
         <button onClick={countPlus} className="plus">Плюс +</button>
+        <button  className="plus">Умножить *</button>
       </div>
     </div>
   );
